@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Main Stage</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <h1 class="page-header__title">Идеальная площадка для главных событий в городе</h1>
-      <a class="btn  page-header__link" href="form.html">Получить презентацию</a>
-    </header>
-  </body>
-</html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Капиталогия</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container  page-header__container">
+      <div class="page-header__wrap">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Capitalogy" width="109" height="40">
+          </picture>
+        </a>
+        <button class="hamburger-btn">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+      <nav class="page-header__nav  page-header__nav--show">
+        <ul class="page-header__nav-list">
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link  page-header__nav-link--active">Главная</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">О мероприятии</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">О спикере</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Приглашение</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Записаться</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="visually-hidden">Актуальная программа</h1>
+    <section class="promo">
+        <div class="promo__img-wrap">
+          <div class="container  promo__img-container">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat energy pro Курица">
+            </picture>
+          </div>
+        </div>
+        <div class="promo__title-wrap">
+            <div class="container">
+              <h2 class="promo__title">Актуальные тренды 2018</h2>
+              <b class="promo__slogan">на чем сейчас зарабатывают в инвестициях?</b>
+              <b class="promo__event">24 мая, начало в 19:00 Стоимость участия: бесплатно</b>
+              <a class="btn promo__link" href="form.html">Записаться</a>
+            </div>
+          </div>
+    </section>
+
+    <div class="container">
+        <section class="advantages">
+          <h2 class="advantages__title">Что вы узнаете на данном семинаре?</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item  advantages__item--1">
+              <p class="advantages__item-descr">Как не только сохранить, но и приумножить свои накопления</p>
+            </li>
+            <li class="advantages__item  advantages__item--2">
+              <p class="advantages__item-descr">Актуальные инвестиционные направления 2018 года</p>
+            </li>
+            <li class="advantages__item  advantages__item--3">
+              <p class="advantages__item-descr">Как и сколько откладывать каждый месяц на инвестиции?</p>
+            </li>
+            <li class="advantages__item  advantages__item--4">
+              <p class="advantages__item-descr">Текущая экономическая ситуация в мире. Прогнозы</p>
+            </li>
+          </ul>
+          <b class="advantages_more">Практикующие трейдеры, реальные кейсы, готовые инструменты для инвестирования.</b>
+        </section>
+      </div>
+
+      <footer class="page-footer">
+          <div class="container  page-footer__wrap">
+            <section class="page-footer__logo-wrap">
+              <a class="page-footer__logo-link">
+                <img class="page-footer__logo" src="img/logo-footer.svg" alt="Capitalogy" width="142" height="52">
+              </a>
+            </section>
+            <section class="page-footer__social-wrap">
+              <ul class="social-list">
+                  <li class="social-item">
+                      <a class="social-item__link  social-item__link--fb" href="#">
+                        <svg class="social-item__link-icon  social-item__link-icon--fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10" height="19">
+                          <use xlink:href="#sprite-icon-fb-mobile" fill="#666666"></use>
+                        </svg>
+                        <span class="visually-hidden">Facebook</span>
+                      </a>
+                    </li>
+                <li class="social-item">
+                  <a class="social-item__link  social-item__link--vk" href="#">
+                    <svg class="social-item__link-icon  social-item__link-icon--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" width="22" height="12">
+                      <use xlink:href="#sprite-icon-vk-mobile" fill="#666666"></use>
+                    </svg>
+                    <span class="visually-hidden">VK</span>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a class="social-item__link  social-item__link--inst" href="#">
+                    <svg class="social-item__link-icon  social-item__link-icon--inst" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                      <use xlink:href="#sprite-icon-insta-mobile" fill="#666666"></use>
+                    </svg>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </footer>
+        <script src="js/scripts.js"></script>
+      </body>
+    </html>
